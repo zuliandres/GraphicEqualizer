@@ -23,6 +23,9 @@ float w4[NUM4_SECTIONS][2] = {0};
 float w5[NUM5_SECTIONS][2] = {0};
 float w6[NUM6_SECTIONS][2] = {0};
 
+float lpg = bp1g = bp2g = bp3g = bp4g = hpg = 1;
+
+
 #include "noise_gen.h"	            //support file for noise sequence generation 
 int fb;                            //feedback variable
 shift_reg sreg;    
@@ -133,7 +136,7 @@ interrupt void c_int11()	 //interrupt service routine
     in6 = yn6;              // output of current section will be input to next
   }
 
-  yn = yn1+yn2+yn3+yn4+yn5+yn6;
+  yn = (yn1*lpg)+(yn2*bp1g)+(yn3*bp2g)+(yn4*bp3g)+(yn5*bp4g)+(yn6*hpg);
 
   output_left_sample((short)yn); // before writing to codec
   return;                       //return from ISR
