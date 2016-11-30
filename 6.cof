@@ -1,0 +1,14 @@
+// 6.cof
+// this file was generated automatically using function dsk_sos_iir67.m
+
+#define NUM6_SECTIONS 3
+
+float b6[NUM6_SECTIONS][3] = { 
+{8.99074917E-06, -1.80608877E-05, 9.07037255E-06},
+{1.00000000E+00, -1.99997544E+00, 1.00000136E+00},
+{1.00000000E+00, -1.99119444E+00, 9.91220253E-01} };
+
+float a6[NUM6_SECTIONS][2] = { 
+{1.83522729E+00, 8.58779906E-01},
+{1.76056865E+00, 8.97622074E-01},
+{1.71058095E+00, 9.62375821E-01} };

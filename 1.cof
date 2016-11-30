@@ -1,0 +1,14 @@
+// 1.cof
+// this file was generated automatically using function dsk_sos_iir67.m
+
+#define NUM1_SECTIONS 3
+
+float b1[NUM1_SECTIONS][3] = { 
+{8.99074917E-06, 1.79816688E-05, 8.99075639E-06},
+{1.00000000E+00, 2.00425198E+00, 1.00427018E+00},
+{1.00000000E+00, 1.99572906E+00, 9.95747180E-01} };
+
+float a1[NUM1_SECTIONS][2] = { 
+{-1.83522729E+00, 8.58779906E-01},
+{-1.76056865E+00, 8.97622074E-01},
+{-1.71058095E+00, 9.62375821E-01} };
