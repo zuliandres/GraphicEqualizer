@@ -1,37 +1,41 @@
 menuitem "Graphic Equalizer Controls";
 
-slider LP(-100, 100, 1, 1, lp_slider)
+slider LP(0, 100, 1, 1, lp_slider)
 {
 	lpg = lp_slider * 0.01;
 }
 
 
-slider BP1(-100, 100, 1, 1, bp1_slider)
+slider BP1(0, 100, 1, 1, bp1_slider)
 {
 	bp1g = bp1_slider * 0.01;
 }
 
 
-slider BP2(-100, 100, 1, 1, bp2_slider)
+slider BP2(0, 100, 1, 1, bp2_slider)
 {
 	bp2g = bp2_slider * 0.01;
 }
 
 
-slider BP3(-100, 100, 1, 1, bp3_slider)
+slider BP3(0, 100, 1, 1, bp3_slider)
 {
 	bp3g = bp3_slider * 0.01;
 }
 
 
-slider BP4(-100, 100, 1, 1, bp4_slider)
+slider BP4(0, 100, 1, 1, bp4_slider)
 {
 	bp4g = bp4_slider * 0.01;
 }
 
 
-slider HP(-100, 100, 1, 1, hp_slider)
+slider HP(0, 100, 1, 1, hp_slider)
 {
 	hpg = hp_slider * 0.01;
 }
 
+slider Signal(0, 1, 1, 1, signal_slider)
+{
+	signal = signal_slider;
+}
