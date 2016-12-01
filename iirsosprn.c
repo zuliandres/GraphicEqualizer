@@ -23,8 +23,12 @@ float w4[NUM4_SECTIONS][2] = {0};
 float w5[NUM5_SECTIONS][2] = {0};
 float w6[NUM6_SECTIONS][2] = {0};
 
-float lpg = bp1g = bp2g = bp3g = bp4g = hpg = 1;
-
+float lpg = 1;
+float bp1g = 1;
+float bp2g = 1;
+float bp3g = 1;
+float bp4g = 1;
+float hpg = 1;
 
 #include "noise_gen.h"	            //support file for noise sequence generation 
 int fb;                            //feedback variable
